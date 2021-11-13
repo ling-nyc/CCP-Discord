@@ -1,15 +1,14 @@
-import discord
+import nextcord
 import asyncio
 import random
 import config
-import discord.ext
-import os
-from discord.utils import get
-from discord.ext import commands, tasks
+import nextcord.ext
+from nextcord.utils import get
+from nextcord.ext import commands, tasks
 
-token = os.environ.get('token')
+token = "ok"
 
-client = discord.Client()
+client = nextcord.Client()
 
 @client.event
 async def on_ready():
@@ -32,10 +31,10 @@ Your message will be deleted and forwarded to the Chinese Ministry of Security i
       await ctx.delete() #deletes their message
 
 @client.event # Keeps people silenced
-async def on_message(ctx, user):
+async def on_message(ctx):
     if ctx.author.id in config.silenced:
         await ctx.delete()
-        print("Message \"" + ctx.message.content + "\" deleted from " + ctx.author.name)
+        print("Message \"" + ctx.content + "\" deleted from " + ctx.author.name)
 
 
 client.run(token)
