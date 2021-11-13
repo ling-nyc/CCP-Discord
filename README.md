@@ -1,5 +1,5 @@
 # CCP-Discord
-A Discord bot written in PY with the Chinese "social credits" meme in mind. Keep in mind that this was made in under 25 minutes so it's incredibly low wuality.
+A Discord bot written in PY with the Chinese "social credits" meme in mind. Keep in mind that this was made in under 25 minutes so it's incredibly low quality.
 
 ## A bot that will delete any messages involving the ccp, etc.
 
@@ -7,7 +7,7 @@ A Discord bot written in PY with the Chinese "social credits" meme in mind. Keep
 
 To start, simply clone the repository, and run `pip3 install discord`
 
-Change the config as you see fit, and put the bot token into main.py.
+Change the config as you see fit, and put the bot token into the env file.
 
 After that, run `python3 main.py` to start the bot.
 
