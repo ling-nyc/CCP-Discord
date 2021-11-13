@@ -5,9 +5,9 @@ A Discord bot written in PY with the Chinese "social credits" meme in mind. Keep
 
 # Running
 
-To start, simply clone the repository, and run `pip3 install discord`
+To start, simply clone the repository, and run `pip3 install nextcord`
 
-Change the config as you see fit, and put the bot token into the env file.
+Change the config as you see fit, and put the bot token into main.py
 
 After that, run `python3 main.py` to start the bot.
 
